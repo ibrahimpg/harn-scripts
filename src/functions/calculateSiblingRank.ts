@@ -181,8 +181,8 @@ export default () => {
   const siblingRankTableNumberKeyArray = siblingRankTableKeyArray.map((x) => Number(x));
   siblingRankTableNumberKeyArray.forEach((x) => {
     if (rankRoll <= x) {
-      rank = [siblingRankTable[x][0]];
-      familySizeModifier = [siblingRankTable[x][1]];
+      rank = String([siblingRankTable[x][0]]);
+      familySizeModifier = Number([siblingRankTable[x][1]]);
     }
   });
   response += `Rank: ${rank} <br>`;
